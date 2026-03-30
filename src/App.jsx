@@ -10,6 +10,12 @@ import Explore from './compontent/Explore'
 import Footer from './compontent/Footer'
 import Render from './compontent/render/render'
 
+const getProduct = async () => {
+  const res = await fetch('/product.json');
+  return res.json()
+}
+const productPromise = getProduct()
+
 function App() {
 
 
@@ -18,7 +24,7 @@ function App() {
    <Navbar/>
    <Banner/>
    <Stats/>
-   <Render/>
+   <Render productPromise={productPromise}/>
    <Steps/>
    <Pricecard/>
    <Explore/>

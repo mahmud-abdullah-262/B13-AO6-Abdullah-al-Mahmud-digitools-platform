@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { use } from 'react';
 import Card from './Card';
 
-const Render = () => {
+
+
+
+
+
+const Render = ({productPromise}) => {
+  
+  const productData = use(productPromise);
+  
   return (
     <div className='flex flex-col gap-6 items-center'>
     <div className='flex flex-col gap-4 my-10'>
@@ -16,8 +24,9 @@ const Render = () => {
     </div>
 
 
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto'>
-      <Card/>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto'>
+      {productData.map(product => <Card key={product} product={product} />)}
+      
     </div>
 
     </div>
