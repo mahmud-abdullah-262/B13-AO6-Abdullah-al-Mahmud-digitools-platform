@@ -1,8 +1,8 @@
 import React from 'react';
-import dummy from '/products/operation.png'
-const Card = ({product}) => {
+import { toast } from 'react-toastify';
+const Card = ({product, cartItems, setCartItems}) => {
 
-  console.log(product)
+  const exist = cartItems.find(p => p.name === product.name);
   return (
   <div className="card bg-base-100 shadow-lg">
   <div className="card-body relative">
@@ -15,7 +15,7 @@ const Card = ({product}) => {
 
     <div className="flex flex-col justify-between">
       <div className='rounded-full bg-white shadow-lg p-4 w-fit mb-6'>
-        <img src={product.icon} alt="dummy" />
+        <img src={product.icon} alt={product.icon} />
       </div>
       
       <h2 className="text-2xl font-bold">{product.name}</h2>
@@ -40,7 +40,21 @@ const Card = ({product}) => {
      
     </ul>
     <div className="mt-auto">
-      <button className="btn btn-primary btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold">Buy Now</button>
+      <button onClick={() => {
+       
+        if(exist){
+          toast.warn('Product already added!');
+          return
+        }else{
+          setCartItems([...cartItems, product]) 
+          toast.success(`${product.name} successfully added!`)
+        }
+
+
+       
+      } } className={`btn btn-block rounded-full font-bold shadow-sm ${exist ? 'bg-base-200' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`}>
+        {exist ? 'Added to cart' : 'Buy Now'}
+      </button>
     </div>
   </div>
       </div>

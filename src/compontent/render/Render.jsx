@@ -1,12 +1,15 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Card from './Card';
-
+import CartItem from './CartItem';
 
 
 
 
 
 const Render = ({productPromise}) => {
+  const [toggle, setToggle] = useState('product');
+  const [cartItems, setCartItems] = useState([])
+  console.log(cartItems)
   
   const productData = use(productPromise);
   
@@ -19,14 +22,18 @@ const Render = ({productPromise}) => {
 
 
     <div className='flex gap-2 p-1 shadow-sm bg-gray-100 rounded-full w-fit'>
-    <button className="btn btn-primary rounded-full">Products</button>
-          <button className="btn rounded-full">Cart (2)</button>
+    <button onClick={() => setToggle('product')} className={`btn rounded-full ${toggle === 'product' ? 'btn-primary' : ''}` }>Products</button>
+
+    <button onClick={() => setToggle('cart')}  className={`btn rounded-full ${toggle === 'product' ? '' : 'btn-primary'}` }>Cart ({cartItems.length})</button>
     </div>
 
 
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto'>
-      {productData.map(product => <Card key={product} product={product} />)}
-      
+      {toggle === 'product' ? (
+        productData.map(product => <Card key={product.name} product={product} cartItems={cartItems} setCartItems={setCartItems} />)
+      ) : (
+        <CartItem/>
+      )}
     </div>
 
     </div>
