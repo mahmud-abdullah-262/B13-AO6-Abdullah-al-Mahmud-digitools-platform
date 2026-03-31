@@ -1,4 +1,4 @@
-📌 Project Name: Digitool
+#📌 Project Name: Digitool
 
 Digitool is a digital service marketplace where users can easily buy a wide range of digital products such as AI tools, design resources, email services, and more — all in one place.
 
@@ -41,5 +41,3 @@ JSON (for data structure)
 🚀 Summary
 
 With Digitool, the goal is to improve the overall experience of buying digital products by making it safer, easier, and more user-friendly. It brings multiple digital services together into one reliable platform, helping users avoid scams and make better purchasing decisions.
-
-If you want, I can also make a GitHub-ready version with badges, screenshots section, and installation steps.
