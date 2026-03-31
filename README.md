@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 # 📌 Project Name: Digitool
-=======
-#📌 Project Name: Digitool
->>>>>>> 42eadb92848ad5089d78e84d6ac71f536237b441
+
 
 Digitool is a digital service marketplace where users can easily buy a wide range of digital products such as AI tools, design resources, email services, and more — all in one place.
 
