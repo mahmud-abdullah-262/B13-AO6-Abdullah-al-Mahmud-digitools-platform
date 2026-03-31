@@ -35,11 +35,11 @@ const Navbar = ({cartItems}) => {
   </div>
   <div className="navbar-end">
     <ul className='flex gap-4 items-center'>
-      <li className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-full'><a>Login</a></li>
+      <li className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-full hidden md:block'><a>Login</a></li>
       <li>
        <CartIcon cartItems={cartItems}/>
       </li>
-      <li className='hidden md:block'><a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold">Get Started</a></li>
+      <li className=''><a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold">Get Started</a></li>
     </ul>
     
   </div> 

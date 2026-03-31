@@ -12,17 +12,15 @@ const Banner = () => {
     />
     </div>
     
-    <div className='space-y-4'>
+    <div className='space-y-4 flex flex-col items-center md:items-start'>
       <div className='w-fit flex gap-4 items-center py-2 px-6 bg-gray-200 rounded-full '>
         <div className="h-2 w-2 rounded-full animate-ping bg-purple-500"></div>
-        <p className='text-xl text-purple-500 font-medium'>New: AI-Powered Tools Available</p>
+        <p className='text-xl text-purple-500 font-medium '>New: AI-Powered Tools Available</p>
       </div>
-      <h1 className="text-6xl font-bold">Supercharge Your <br /> Digital Workflow</h1>
-      <p className="py-6">
+      <h1 className="text-4xl text-center font-black md:text-6xl md:text-left">Supercharge Your <br /> Digital Workflow</h1>
+      <p className="py-6 text-gray-600 text-center md:text-left">
        Access premium AI tools, design assets, templates, and productivity <br /> 
 software—all in one place. Start creating faster today.
-<br />
-Explore Products
       </p>
       <div className='flex items-center gap-2'>
          <button className="btn btn-primary rounded-full">Explore Products</button>

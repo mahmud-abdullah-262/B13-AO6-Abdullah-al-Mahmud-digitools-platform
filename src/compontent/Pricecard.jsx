@@ -3,7 +3,7 @@ import React from 'react';
 const Pricecard = () => {
   return (
       <div className='flex flex-col w-11/12 mx-auto  my-24'>
-      <h1 className='text-5xl font-bold mb-4 text-center'>Simple, Transparent Pricing</h1>
+      <h1 className='text-3xl md:text-5xl font-bold mb-4 text-center'>Simple, Transparent Pricing</h1>
       <p className='text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
     <div className='w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 my-10'>

@@ -5,7 +5,7 @@ import rocket from '/rocket.png';
 const Steps = () => {
   return (
     <div className='flex flex-col w-11/12 mx-auto text-center my-24'>
-      <h1 className='text-5xl font-bold mb-4'>Get Started in 3 Steps</h1>
+      <h1 className='text-3xl md:text-5xl font-bold mb-4'>Get Started in 3 Steps</h1>
       <p>Start using premium digital tools in minutes, not hours.</p>
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-10 w-11/12 mx-auto mt-10'>
