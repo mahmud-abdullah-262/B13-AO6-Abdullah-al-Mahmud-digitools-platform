@@ -47,7 +47,7 @@ const Render = ({productPromise, cartItems, setCartItems}) => {
           ? <CartItem cartItems={cartItems} setCartItems={setCartItems} totalPrice={totalPrice} setTotalPrice={setTotalPrice} /> 
           : <p className='text-gray-600'>Your cart is empty. Please select a product for product tab.</p>}
           
-          
+          <div className='divider'></div>
           <div className='flex justify-between items-center'>
             <p>Total:</p>
             <p className='font-bold text-2xl'>{totalPrice}</p>
