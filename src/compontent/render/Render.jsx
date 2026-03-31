@@ -6,9 +6,9 @@ import CartItem from './CartItem';
 
 
 
-const Render = ({productPromise}) => {
+const Render = ({productPromise, cartItems, setCartItems}) => {
   const [toggle, setToggle] = useState('product');
-  const [cartItems, setCartItems] = useState([])
+  
   console.log(cartItems)
   
   const productData = use(productPromise);
@@ -32,7 +32,12 @@ const Render = ({productPromise}) => {
       {toggle === 'product' ? (
         productData.map(product => <Card key={product.name} product={product} cartItems={cartItems} setCartItems={setCartItems} />)
       ) : (
-        <CartItem/>
+        <div className='flex flex-col p-10 rounded-2xl border border-gray-200 col-span-1 md:col-span-2 lg:col-span-3'>
+          <h1 className='text-3xl font-bold mb-10'>Your Cart</h1>
+          <CartItem cartItems={cartItems} />
+          
+        </div>
+        
       )}
     </div>
 

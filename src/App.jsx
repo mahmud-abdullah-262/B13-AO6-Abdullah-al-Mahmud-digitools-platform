@@ -9,6 +9,7 @@ import Pricecard from './compontent/Pricecard'
 import Explore from './compontent/Explore'
 import Footer from './compontent/Footer'
 import Render from './compontent/render/render'
+import { useState } from 'react'
 
 const getProduct = async () => {
   const res = await fetch('/product.json');
@@ -16,15 +17,18 @@ const getProduct = async () => {
 }
 const productPromise = getProduct()
 
-function App() {
 
+
+
+function App() {
+const [cartItems, setCartItems] = useState([])
 
   return (
    <>
-   <Navbar/>
+   <Navbar cartItems={cartItems} setCartItems={setCartItems} />
    <Banner/>
    <Stats/>
-   <Render productPromise={productPromise}/>
+   <Render productPromise={productPromise} cartItems={cartItems} setCartItems={setCartItems} />
    <Steps/>
    <Pricecard/>
    <Explore/>

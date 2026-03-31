@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from '/DigiTools.png'
-const Navbar = () => {
+import CartIcon from './render/CartIcon';
+const Navbar = ({cartItems}) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50">
       <div className='container mx-auto flex '>
        <div className="navbar-start">
     <div className="dropdown">
@@ -19,7 +20,7 @@ const Navbar = () => {
       <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">
+    <a className="btn btn-ghost w-36 md:w-auto">
       <img src={Logo} alt="digitools" />
     </a>
   </div>
@@ -34,16 +35,11 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <ul className='flex gap-4 items-center'>
-      <li><a>Login</a></li>
+      <li className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-full'><a>Login</a></li>
       <li>
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-        <div class="indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-          <span class="badge badge-sm indicator-item">0</span>
-        </div>
-        </div>
+       <CartIcon cartItems={cartItems}/>
       </li>
-      <li><a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold">Get Started</a></li>
+      <li className='hidden md:block'><a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold">Get Started</a></li>
     </ul>
     
   </div> 
