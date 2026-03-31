@@ -4,11 +4,11 @@ import packageImg from '/package.png';
 import rocket from '/rocket.png';
 const Steps = () => {
   return (
-    <div className='flex flex-col container mx-auto text-center my-24'>
+    <div className='flex flex-col w-11/12 mx-auto text-center my-24'>
       <h1 className='text-5xl font-bold mb-4'>Get Started in 3 Steps</h1>
       <p>Start using premium digital tools in minutes, not hours.</p>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 w-11/12 mx-auto mt-10'>
 
         <div className='space-x-4 shadow rounded-2xl bg-gray-100 flex flex-col items-center p-10 relative'>
           <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full p-1 h-6 w-6 text-white flex justify-center items-center absolute top-4 right-4'><p className='font-light text-sm'>01</p></div>

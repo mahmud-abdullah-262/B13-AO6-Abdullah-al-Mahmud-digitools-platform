@@ -1,10 +1,12 @@
 [
   {
+    "id": 1,
     "name": "Design Templates Pack",
     "description": "2000+ premium templates for social media, presentations, and marketing materials.",
     "price": 29,
     "period": "monthly",
     "tagType": "Popular",
+    "tags": ["design", "templates", "marketing", "figma", "psd"],
     "features": [
       "2000+ design templates",
       "Editable PSD & Figma files",
@@ -15,11 +17,13 @@
     "icon": "https://i.ibb.co/23BfQDpx/icons8-design.gif"
   },
   {
+    "id": 2,
     "name": "AI Writing Toolkit",
     "description": "Boost your writing with AI-powered content generation tools.",
     "price": 19,
     "period": "monthly",
     "tagType": "Trending",
+    "tags": ["ai", "writing", "content", "seo", "automation"],
     "features": [
       "50+ writing templates",
       "SEO optimized content",
@@ -30,11 +34,13 @@
     "icon": "https://i.ibb.co/MxKxhBv8/icons8-chatbot.gif"
   },
   {
+    "id": 3,
     "name": "Social Media Scheduler",
     "description": "Plan and automate your social media posts across multiple platforms.",
     "price": 15,
     "period": "monthly",
     "tagType": "Trending",
+    "tags": ["social media", "automation", "scheduler", "marketing"],
     "features": [
       "Auto scheduling",
       "Multi-platform support",
@@ -45,11 +51,13 @@
     "icon": "https://i.ibb.co/TMS30dtY/icons8-schedule-48.png"
   },
   {
+    "id": 4,
     "name": "Video Editing Suite",
     "description": "Professional video editing tools for creators and marketers.",
     "price": 49,
     "period": "monthly",
     "tagType": "Popular",
+    "tags": ["video", "editing", "content creation", "media"],
     "features": [
       "4K video export",
       "100+ transitions",
@@ -60,11 +68,13 @@
     "icon": "https://i.ibb.co/cKCqRvZ9/icons8-final-cut-pro-new-48.png"
   },
   {
+    "id": 5,
     "name": "SEO Optimization Kit",
     "description": "All-in-one toolkit to improve your website ranking on search engines.",
     "price": 25,
     "period": "monthly",
     "tagType": "Recommended",
+    "tags": ["seo", "marketing", "analytics", "website"],
     "features": [
       "Keyword research tool",
       "On-page SEO checker",
@@ -75,11 +85,13 @@
     "icon": "https://i.ibb.co/cKp7djLx/icons8-analytics.gif"
   },
   {
+    "id": 6,
     "name": "UI/UX Design System",
     "description": "Complete UI kit with components for modern web and app design.",
     "price": 35,
     "period": "monthly",
     "tagType": "Popular",
+    "tags": ["ui", "ux", "design", "figma", "components"],
     "features": [
       "500+ UI components",
       "Figma & Sketch support",
@@ -90,11 +102,13 @@
     "icon": "https://i.ibb.co/QjnT1kHm/icons8-web-48.png"
   },
   {
+    "id": 7,
     "name": "Email Marketing Pro",
     "description": "Create, send, and track email campaigns with ease.",
     "price": 22,
     "period": "monthly",
     "tagType": "Recommended",
+    "tags": ["email", "marketing", "automation", "campaign"],
     "features": [
       "Drag & drop email builder",
       "Automation workflows",
@@ -105,11 +119,13 @@
     "icon": "https://i.ibb.co/jPc5S0X2/icons8-send-email-48.png"
   },
   {
+    "id": 8,
     "name": "Stock Assets Library",
     "description": "Unlimited access to high-quality images, videos, and graphics.",
     "price": 18,
     "period": "monthly",
     "tagType": "Trending",
+    "tags": ["stock", "images", "videos", "assets", "media"],
     "features": [
       "1M+ stock images",
       "HD & 4K videos",
@@ -120,11 +136,13 @@
     "icon": "https://i.ibb.co/h5LC6wK/icons8-depreciation-48.png"
   },
   {
+    "id": 9,
     "name": "Website Builder Pro",
     "description": "Build stunning websites without coding using drag & drop tools.",
     "price": 39,
     "period": "monthly",
     "tagType": "Recommended",
+    "tags": ["website", "builder", "no-code", "hosting"],
     "features": [
       "Drag & drop builder",
       "100+ templates",
@@ -135,11 +153,13 @@
     "icon": "https://i.ibb.co/Kp28f1Rj/icons8-website.gif"
   },
   {
+    "id": 10,
     "name": "Analytics Dashboard Tool",
     "description": "Track and visualize your business data in real-time.",
     "price": 27,
     "period": "monthly",
     "tagType": "Trending",
+    "tags": ["analytics", "dashboard", "data", "tracking"],
     "features": [
       "Real-time data tracking",
       "Custom dashboards",

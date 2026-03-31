@@ -3,7 +3,7 @@ import footerLogo from '/DigiTools-footer.png'
 const Footer = () => {
   return (
     <div className=' bg-[#09090B] pt-16'>
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 container mx-auto">
+      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 w-11/12 mx-auto">
       <div>
         <img src={footerLogo} alt="footerlogo" />
         <p>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -35,7 +35,7 @@ const Footer = () => {
   
 </footer>
     <div className='divider before:bg-gray-800 after:bg-gray-800 container mx-auto'></div>
-    <div className='text-gray-500 flex justify-between container mx-auto py-2'>
+    <div className='text-gray-500 flex justify-between w-11/12 mx-auto py-2'>
     <p>© 2026 Digitools. All rights reserved.</p>
 
     <div>

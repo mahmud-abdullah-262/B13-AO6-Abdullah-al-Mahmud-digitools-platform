@@ -1,6 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
-const Card = ({product, cartItems, setCartItems}) => {
+const Card = ({product, cartItems, setCartItems, totalPrice, setTotalPrice}) => {
 
   const exist = cartItems.find(p => p.name === product.name);
   return (
@@ -48,6 +48,7 @@ const Card = ({product, cartItems, setCartItems}) => {
         }else{
           setCartItems([...cartItems, product]) 
           toast.success(`${product.name} successfully added!`)
+          setTotalPrice(totalPrice + product.price)
         }
 
 
