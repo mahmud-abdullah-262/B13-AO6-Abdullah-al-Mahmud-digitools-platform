@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import Card from './Card';
 import CartItem from './CartItem';
+import { toast } from 'react-toastify';
 
 
 
@@ -16,7 +17,8 @@ const Render = ({productPromise, cartItems, setCartItems}) => {
   const handleProceed = () => {
     return(
       setCartItems([]),
-      setTotalPrice(0)
+      setTotalPrice(0),
+      toast('Your cart is empty now!')
     )
   }
   
@@ -45,7 +47,7 @@ const Render = ({productPromise, cartItems, setCartItems}) => {
 
           {cartItems.length > 0 
           ? <CartItem cartItems={cartItems} setCartItems={setCartItems} totalPrice={totalPrice} setTotalPrice={setTotalPrice} /> 
-          : <p className='text-gray-600'>Your cart is empty. Please select a product for product tab.</p>}
+          : <p className='text-gray-600'>Your cart is empty. Please select a product from product tab.</p>}
           
           <div className='divider'></div>
           <div className='flex justify-between items-center'>

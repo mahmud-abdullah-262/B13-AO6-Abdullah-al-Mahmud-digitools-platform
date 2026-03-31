@@ -1,16 +1,45 @@
-# React + Vite
+📌 Project Name: Digitool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digitool is a digital service marketplace where users can easily buy a wide range of digital products such as AI tools, design resources, email services, and more — all in one place.
 
-Currently, two official plugins are available:
+🎯 Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The main goal of this project is to simplify the process of buying reliable digital tools. Many users lose money on fake or untrustworthy websites. Digitool aims to solve this problem by providing a trusted platform where users can confidently purchase digital services without risk.
 
-## React Compiler
+💡 Key Features
+🔄 Dynamic Data Loading
+Products are fetched dynamically using an API and displayed in the UI.
+🛒 Centralized Cart Management
+A global state is used to manage cart items, ensuring consistent rendering across the application.
+📦 Product Cards
+Each product is displayed in a clean card layout with:
+Name
+Description
+Price
+Features
+📄 Separate Cart Page
+Users can view all selected items on a dedicated cart page.
+🔘 Interactive Button State
+The button text changes based on whether a product is already added to the cart.
+💰 Real-time Price Calculation
+Total price updates automatically when items are added or removed.
+🧹 Cart Reset Functionality
+A “Proceed” button allows users to clear the entire cart at once.
+🎨 Design & User Experience
+Simple and clean UI for better usability
+All products are displayed on a single page for easy comparison and decision-making
+Fully responsive design for all device types (mobile, tablet, desktop)
+🛠️ Technologies Used
+HTML
+JavaScript (ES6)
+React
+Tailwind CSS
+DaisyUI
+React Toastify (for better user feedback and notifications)
+ImgBB (for image hosting)
+JSON (for data structure)
+🚀 Summary
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+With Digitool, the goal is to improve the overall experience of buying digital products by making it safer, easier, and more user-friendly. It brings multiple digital services together into one reliable platform, helping users avoid scams and make better purchasing decisions.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you want, I can also make a GitHub-ready version with badges, screenshots section, and installation steps.
