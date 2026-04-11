@@ -1,46 +1,67 @@
+![30](https://github.com/user-attachments/assets/1362ca77-1705-4355-8489-9fa9505cd7eb)
+![ggr](https://github.com/user-attachments/assets/ee02a8fa-4727-4928-868f-1d9bee2cbb8f)
 
-# 📌 Project Name: Digitool
 
+## 📌 Digitool – Digital Service Marketplace  
 
-Digitool is a digital service marketplace where users can easily buy a wide range of digital products such as AI tools, design resources, email services, and more — all in one place.
+**Digitool** is a digital service marketplace where users can easily purchase a wide range of digital products such as AI tools, design resources, email services, and more — all in one place.  
 
-# 🎯 Purpose
+The goal of this project is to create a **trusted and user-friendly platform** that helps users avoid unreliable sources and confidently buy digital services.  
 
-The main goal of this project is to simplify the process of buying reliable digital tools. Many users lose money on fake or untrustworthy websites. Digitool aims to solve this problem by providing a trusted platform where users can confidently purchase digital services without risk.
+---
 
-# 💡 Key Features
-## 🔄 Dynamic Data Loading
-Products are fetched dynamically using an API and displayed in the UI.
-🛒 Centralized Cart Management
-A global state is used to manage cart items, ensuring consistent rendering across the application.
-## 📦 Product Cards
-Each product is displayed in a clean card layout with:
-* Name
-* Description
-* Price
-* Features
-## 📄 Separate Cart Page
-Users can view all selected items on a dedicated cart page.
-## 🔘 Interactive Button State
-The button text changes based on whether a product is already added to the cart.
-## 💰 Real-time Price Calculation
-Total price updates automatically when items are added or removed.
-## 🧹 Cart Reset Functionality
-A “Proceed” button allows users to clear the entire cart at once.
-## 🎨 Design & User Experience
-* Simple and clean UI for better usability
-* All products are displayed on a single page for easy comparison and decision-making
-* Fully responsive design for all device types (mobile, tablet, desktop)
-## 🛠️ Technologies Used
-* HTML
-* JavaScript (ES6)
-* React
-* Tailwind CSS
-* DaisyUI
-* React Toastify (for better user feedback and notifications)
-* ImgBB (for image hosting)
-* JSON (for data structure)
+## 🚀 Live Demo  
 
-## 🚀 Summary
+🔗 **Live Link:** [https://digitool.com  ](https://digitool-abdullah-al-mahmud.netlify.app/)
 
-With Digitool, the goal is to improve the overall experience of buying digital products by making it safer, easier, and more user-friendly. It brings multiple digital services together into one reliable platform, helping users avoid scams and make better purchasing decisions.
+---
+
+## 🛠️ Technologies Used  
+
+- 🧱 HTML  
+- ⚡ JavaScript (ES6)  
+- ⚛️ React  
+- 🎨 Tailwind CSS  
+- 🌼 DaisyUI  
+- 🔔 React Toastify  
+- 🖼️ ImgBB (Image Hosting)  
+- 📦 JSON (Data Structure)  
+
+---
+
+## ✨ Key Features  
+
+- 🔄 **Dynamic Data Loading** using API  
+- 🛒 **Centralized Cart Management** with global state  
+- 📦 Clean **Product Card UI** (Name, Description, Price, Features)  
+- 📄 **Dedicated Cart Page** for selected items  
+- 🔘 **Interactive Button State** (Add/Added toggle)  
+- 💰 **Real-time Price Calculation**  
+- 🧹 **Cart Reset Functionality** (Proceed button clears cart)  
+- 🎨 **Responsive & Clean UI** for all devices  
+
+---
+
+## 📦 Dependencies  
+
+- React  
+- React Toastify  
+- Tailwind CSS  
+- DaisyUI  
+
+---
+
+## ⚙️ How to Run Locally  
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/mahmud-abdullah-262/B13-AO6-Abdullah-al-Mahmud-digitools-platform.git
+
+# 2. Navigate to the project folder
+cd your-repo-name
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
+npm run dev
